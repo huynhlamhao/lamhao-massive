@@ -1,0 +1,50 @@
+.banner {
+   .carousel-caption {
+      color: black;
+      right: 0;
+      top: 40%;
+      bottom: 15%;
+      left: 12%;
+      width: 50%;
+      h1 {
+         padding: 10px;
+         text-align: left;
+         span {
+            font-size: 1rem;
+         }
+      }
+      p {
+         padding: 10px;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         text-align: left;
+         color: rgba(26, 21, 21, 0.527);
+         letter-spacing: 1px;
+      }
+   }
+
+   .full-screen {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+   .carousel-indicators {
+      li {
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         border: 2px solid white;
+         background-color: rgba(255, 255, 255, 0);
+      }
+   }
+}
+.carousel-control-prev {
+   &:hover {
+      cursor: url(./../../img/carousel/arrow_left.png), auto !important;
+   }
+}
+.carousel-control-next {
+   &:hover {
+      cursor: url(./../../img/carousel/arrow_right.png), auto !important;
+   }
+}

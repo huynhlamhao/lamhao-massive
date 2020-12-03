@@ -1,0 +1,89 @@
+#skill__exp {
+   background-image: url(./../../img/paralax/4.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+   color: white;
+   position: relative;
+
+   .middle__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // padding-top: 100px;
+      padding-right: 70px;
+      letter-spacing: 5px;
+      margin-top: 0.5rem;
+   }
+   //    .overlay__dark {
+   //       position: absolute;
+   //       top: 0;
+   //       left: 0;
+   //       width: 100%;
+   //       height: 100%;
+   //       background: rgba(0, 0, 0, 0.5);
+   //    }
+   .bar-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 140px 70px;
+   }
+   .skill__text {
+      width: 60%;
+      letter-spacing: 2px;
+      line-height: 25px;
+   }
+}
+.row {
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.dd-center-content {
+   width: 100%;
+   height: 100vh;
+   /* background-color: bisque; */
+}
+.bar {
+   width: 60%;
+   height: 20px;
+   position: relative;
+   transition: all 1s;
+   background-color: gray;
+   margin-top: 40px;
+   color: black;
+}
+.bar-percent {
+   position: absolute;
+   transition: all 1s;
+   width: 0%;
+   height: 100%;
+   background-color: white;
+   p {
+      padding-left: 10px;
+   }
+}
+.bar-text {
+   position: absolute;
+   bottom: 140%;
+   right: -5%;
+   width: 40px;
+   height: 20px;
+   line-height: 25px;
+   border-radius: 20px;
+   background-color: #a4a4a4 !important;
+   color: rgba(0, 0, 0, 0.486);
+   text-align: center;
+   font-size: 0.7rem;
+   &::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: #a4a4a4;
+      bottom: -3px;
+      left: 20px;
+      transform: rotate(45deg);
+   }
+}

@@ -1,0 +1,19 @@
+#promotion {
+   color: white;
+   background-color: #222;
+   padding: 60px 0;
+   h5 {
+      font-weight: 600;
+      > span {
+         color: #d6b161;
+      }
+   }
+   button {
+      padding: 20px;
+      font-size: 0.8rem;
+      background: rgba(255, 255, 255, 0.2);
+      &:hover {
+         background-color: #d6b161;
+      }
+   }
+}

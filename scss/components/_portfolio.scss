@@ -1,0 +1,80 @@
+#portflolio {
+   padding: 100px 0;
+   .portflolio__heading {
+      @include heading();
+   }
+   .portfolio__filter {
+      .nav {
+         justify-content: center;
+         li {
+            padding: 0 20px;
+            font-size: 0.9rem;
+            a.active {
+               color: black;
+            }
+            a {
+               color: #a9a8a8;
+               text-decoration: none;
+            }
+         }
+      }
+      .portfolio__effect {
+         padding: 15px 15px;
+         .portfolio__img {
+            position: relative;
+            img {
+               width: 100%;
+            }
+            .portfolio__overlay {
+               @include overLayHidden();
+               > a {
+                  color: black;
+                  font-size: 2rem;
+                  font-weight: 100;
+                  position: absolute;
+                  top: 5%;
+                  left: 0;
+                  right: 0;
+                  transition: all 0.5s;
+               }
+               .portfolio__description {
+                  position: absolute;
+                  bottom: -5%;
+                  left: 0;
+                  right: 0;
+                  text-align: center;
+                  transition: all 0.5s;
+                  a {
+                     text-decoration: none;
+                     color: black;
+                     transition: all 0.5s;
+                     &:hover {
+                        color: #d6b161;
+                     }
+                  }
+                  p {
+                     color: $primaryColor;
+                     cursor: pointer;
+                     transition: all 0.5s;
+
+                     &:hover {
+                        color: #d6b161;
+                     }
+                  }
+               }
+            }
+         }
+         &:hover {
+            .portfolio__overlay {
+               @include overLayDisplay();
+               a {
+                  top: 15%;
+               }
+               .portfolio__description {
+                  bottom: 0;
+               }
+            }
+         }
+      }
+   }
+}

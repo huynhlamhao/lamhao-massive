@@ -1,0 +1,34 @@
+#services {
+   padding-bottom: 50px;
+
+   .services__heading {
+      @include heading();
+   }
+   .service__effects {
+      text-align: center;
+      padding: 30px 35px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.5s;
+      i {
+         font-size: 3rem;
+         margin: 20px 0;
+      }
+      h4 {
+         margin: 20px 0;
+      }
+      p {
+         color: #7e7e7e;
+         font-size: 0.8rem;
+         margin-top: 30px;
+      }
+      &:hover {
+         background-color: #222;
+         i {
+            color: #d6b161;
+         }
+         h4 {
+            color: white;
+         }
+      }
+   }
+}

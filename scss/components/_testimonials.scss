@@ -1,0 +1,47 @@
+#testimonials {
+   background-image: url(../../img/paralax/14.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   .testimonials__effects {
+      margin-top: 200px;
+      padding-left: 50px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      h4 {
+         color: #d6b161;
+      }
+      p {
+         font-size: 0.8rem;
+         letter-spacing: 2px;
+         color: white;
+      }
+      button {
+         font-size: 0.7rem;
+         padding: 10px 15px;
+         transition: all 0.5s;
+         @include btnHover();
+      }
+   }
+   .owl-dots {
+      text-align: right !important;
+      button {
+         span {
+            width: 15px;
+            height: 15px;
+            background-color: #cecece8f !important;
+         }
+         &:hover {
+            span {
+               background-color: white !important;
+            }
+         }
+      }
+      .active {
+         span {
+            background-color: white !important;
+         }
+      }
+   }
+}

@@ -1,0 +1,52 @@
+#design {
+   .design__heading {
+      h1 {
+         text-align: center;
+         padding: 15px 0;
+      }
+      p {
+         width: 60%;
+         margin: 0 auto;
+         text-align: center;
+         color: $primaryColor;
+         padding: 30px 0;
+      }
+   }
+   .design__effect {
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.109);
+      border-radius: 3%;
+      transition: all 0.5s;
+      .design__text {
+         padding: 70px 20px 20px 20px;
+         p {
+            color: $primaryColor;
+            letter-spacing: 1px;
+         }
+      }
+      i {
+         position: absolute;
+         font-size: 2rem;
+         top: -15%;
+         left: 10%;
+         background-color: black;
+         color: white;
+         width: 60px;
+         height: 60px;
+         line-height: 60px;
+         border-radius: 10%;
+         text-align: center;
+         transition: all 0.5s;
+      }
+      &:hover {
+         i {
+            background-color: #d6b161;
+         }
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   .res {
+      padding: 30px 0;
+   }
+}
